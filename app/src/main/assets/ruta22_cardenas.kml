@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Ruta 22 - Cárdenas - Tehuacán</name>
+    <description><![CDATA[📍 RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos y COMPARTE con todos tus contactos: http://www.rutastehuacan.th1.mx<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+    <Style id="icon-1899-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-E65100-7200-normal">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>7.2</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-E65100-7200-highlight">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>10.8</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-E65100-7200">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-E65100-7200-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-E65100-7200-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Recorrido Ruta 22 Cárdenas</name>
+      <Placemark>
+        <name>Recorrido de la Ruta 22 - Cárdenas</name>
+        <description><![CDATA[📍 RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos y COMPARTE con todos tus contactos: http://www.rutastehuacan.th1.mx<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+        <styleUrl>#line-E65100-7200</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -97.3613951,18.4180311,0
+            -97.3617491,18.4201586,0
+            -97.3620174,18.4212172,0
+            -97.3621246,18.4219297,0
+            -97.3631332,18.4241589,0
+            -97.3630795,18.4244745,0
+            -97.3637662,18.4252074,0
+            -97.3643884,18.4258893,0
+            -97.3659119,18.4276401,0
+            -97.3669097,18.4287699,0
+            -97.3693666,18.4315588,0
+            -97.3729715,18.4353757,0
+            -97.3733899,18.4358236,0
+            -97.3735938,18.4363732,0
+            -97.3736903,18.4372485,0
+            -97.3739693,18.4394979,0
+            -97.3741088,18.4400271,0
+            -97.3744306,18.4404444,0
+            -97.3753748,18.4407803,0
+            -97.376115,18.4408922,0
+            -97.3799623,18.4411947,0
+            -97.3809645,18.443569,0
+            -97.3814017,18.4447532,0
+            -97.3814992,18.4451627,0
+            -97.3820266,18.4462254,0
+            -97.3829661,18.4478987,0
+            -97.3833463,18.4487189,0
+            -97.3838935,18.4496145,0
+            -97.3853526,18.4514566,0
+            -97.3866347,18.453174,0
+            -97.3876164,18.4543953,0
+            -97.3910281,18.4544665,0
+            -97.3915504,18.4552173,0
+            -97.3914841,18.4574433,0
+            -97.3914734,18.4598247,0
+            -97.3913875,18.4633051,0
+            -97.3913674,18.4669078,0
+            -97.3894309,18.4668455,0
+            -97.3894557,18.4648933,0
+            -97.3894629,18.4635812,0
+            -97.3894093,18.4629095,0
+            -97.389461,18.4622963,0
+            -97.3894738,18.461596,0
+            -97.3895046,18.4593006,0
+            -97.3895744,18.4571227,0
+            -97.389608,18.4554148,0
+            -97.3884278,18.4554072,0
+            -97.3875842,18.4542375,0
+            -97.3859909,18.4521105,0
+            -97.3841939,18.4497646,0
+            -97.383577,18.4489657,0
+            -97.3831478,18.4480853,0
+            -97.3819462,18.4458056,0
+            -97.3816565,18.4452763,0
+            -97.3815599,18.4448438,0
+            -97.3813132,18.4442077,0
+            -97.3808518,18.44291,0
+            -97.380074,18.4410678,0
+            -97.3781964,18.4409406,0
+            -97.3759327,18.4407268,0
+            -97.3751334,18.440564,0
+            -97.3746398,18.4403706,0
+            -97.374318,18.4401213,0
+            -97.3741517,18.4397701,0
+            -97.3740927,18.439307,0
+            -97.3738244,18.4370882,0
+            -97.3736957,18.4362231,0
+            -97.3736313,18.435989,0
+            -97.3735133,18.4357599,0
+            -97.373052,18.435251,0
+            -97.3708311,18.4329813,0
+            -97.367945,18.4297852,0
+            -97.3661372,18.4277037,0
+            -97.3654345,18.426981,0
+            -97.364603,18.426014,0
+            -97.3641148,18.4254745,0
+            -97.3631922,18.4244363,0
+            -97.363219,18.4242429,0
+            -97.363219,18.4241055,0
+            -97.3631439,18.4239579,0
+            -97.3627469,18.423108,0
+            -97.3622105,18.4219425,0
+            -97.3621139,18.4213775,0
+            -97.3619262,18.4204258,0
+            -97.3618028,18.4199524,0
+            -97.3614756,18.4180184,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      

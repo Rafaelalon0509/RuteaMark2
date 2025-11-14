@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Ruta 7 San Agustín - Tehuacán</name>
+    <description><![CDATA[📍  RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos en TELEGRAM y COMPARTE con todos tus contactos: https://t.me/rutastehuacan<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+    <Style id="icon-1899-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-E65100-7200-normal">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>7.2</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-E65100-7200-highlight">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>10.8</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-E65100-7200">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-E65100-7200-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-E65100-7200-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>R7</name>
+      <Placemark>
+        <name>Recorrido de la Ruta 7 San Agustín</name>
+        <description><![CDATA[📍 RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos y COMPARTE con todos tus contactos: http://www.rutastehuacan.th1.mx<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+        <styleUrl>#line-E65100-7200</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -97.411955,18.433676,0
+            -97.410732,18.431828,0
+            -97.410034,18.430958,0
+            -97.405807,18.433737,0
+            -97.403383,18.435269,0
+            -97.400684,18.437131,0
+            -97.400373,18.437442,0
+            -97.400084,18.43791,0
+            -97.399638,18.438846,0
+            -97.39826,18.44192,0
+            -97.397079,18.44451,0
+            -97.396114,18.446668,0
+            -97.395025,18.449106,0
+            -97.394644,18.449696,0
+            -97.394467,18.450245,0
+            -97.394456,18.451579,0
+            -97.392638,18.451548,0
+            -97.392541,18.453787,0
+            -97.392504,18.456387,0
+            -97.392498,18.458703,0
+            -97.385213,18.458433,0
+            -97.38531,18.457339,0
+            -97.391136,18.457502,0
+            -97.392782,18.457583,0
+            -97.392842,18.452551,0
+            -97.394506,18.452674,0
+            -97.394596,18.450306,0
+            -97.3948,18.449742,0
+            -97.395159,18.449233,0
+            -97.395728,18.448047,0
+            -97.396838,18.445594,0
+            -97.39753,18.444103,0
+            -97.398486,18.441951,0
+            -97.400116,18.438348,0
+            -97.400239,18.438139,0
+            -97.400663,18.437493,0
+            -97.401966,18.436485,0
+            -97.404198,18.435019,0
+            -97.406988,18.433218,0
+            -97.41011,18.431177,0
+            -97.4107,18.431905,0
+            -97.411858,18.433691,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+     

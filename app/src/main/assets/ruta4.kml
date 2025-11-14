@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Ruta 4 - Tehuacán</name>
+    <description><![CDATA[📍  RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos en TELEGRAM y COMPARTE con todos tus contactos: https://t.me/rutastehuacan<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+    <Style id="icon-1899-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-E65100-7200-normal">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>7.2</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-E65100-7200-highlight">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>10.8</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-E65100-7200">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-E65100-7200-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-E65100-7200-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-E65100-7394-normal">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>7.394</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-E65100-7394-highlight">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>11.091</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-E65100-7394">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-E65100-7394-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-E65100-7394-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>R4</name>
+      <Placemark>
+        <name>Recorrido de la Ruta 4</name>
+        <description><![CDATA[📍 RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos y COMPARTE con todos tus contactos: http://www.rutastehuacan.th1.mx<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+        <styleUrl>#line-E65100-7200</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -97.391441,18.4628853,0
+            -97.3816777,18.4625698,0
+            -97.3746182,18.4622645,0
+            -97.3743875,18.4642438,0
+            -97.3769302,18.4644168,0
+            -97.3810769,18.4645746,0
+            -97.3914302,18.4649002,0
+            -97.391378,18.472142,0
+            -97.3912264,18.4722119,0
+            -97.3912049,18.4723289,0
+            -97.391367,18.472574,0
+            -97.391281,18.47524,0
+            -97.3938871,18.4752748,0
+            -97.3959042,18.4749238,0
+            -97.3972453,18.4770149,0
+            -97.3975242,18.4770403,0
+            -97.3980338,18.4650885,0
+            -97.404042,18.4652564,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>Recorrido de la Ruta 4</name>
+        <description><![CDATA[📍 RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos y COMPARTE con todos tus contactos: http://www.rutastehuacan.th1.mx<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+        <styleUrl>#line-E65100-7394</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -97.404042,18.4652564,0
+            -97.4042334,18.4623295,0
+            -97.4095227,18.462528,0
+            -97.4097695,18.4570325,0
+            -97.4098124,18.4548037,0
+            -97.4096622,18.4534654,0
+            -97.4088844,18.4533738,0
+            -97.4090507,18.4549615,0
+            -97.4036916,18.4562743,0
+            -97.3966374,18.456198,0
+            -97.396573,18.4588745,0
+            -97.3915573,18.4587117,0
+            -97.391441,18.4628853,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+    

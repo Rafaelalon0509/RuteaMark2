@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Ruta 30 - San Lorenzo  - Tehuacán</name>
+    <description><![CDATA[📍  RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos en TELEGRAM y COMPARTE con todos tus contactos: https://t.me/rutastehuacan<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+    <Style id="icon-1899-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-E65100-7200-normal">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>7.2</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-E65100-7200-highlight">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>10.8</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-E65100-7200">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-E65100-7200-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-E65100-7200-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Recorrido Ruta 30 Sn Lorenzo</name>
+      <Placemark>
+        <name>Recorrido de la Ruta 30 - San Lorenzo</name>
+        <description><![CDATA[📍 RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos y COMPARTE con todos tus contactos: http://www.rutastehuacan.th1.mx<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+        <styleUrl>#line-E65100-7200</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -97.4345814,18.4805787,0
+            -97.4354772,18.4811434,0
+            -97.4357025,18.4800953,0
+            -97.436019,18.4787369,0
+            -97.4325912,18.4778872,0
+            -97.4298768,18.4772105,0
+            -97.4303059,18.4753178,0
+            -97.4305203,18.4742216,0
+            -97.4291043,18.4738627,0
+            -97.4281226,18.4736388,0
+            -97.4275003,18.47342,0
+            -97.4268942,18.4731046,0
+            -97.4260627,18.4725093,0
+            -97.4254672,18.4720666,0
+            -97.4250327,18.4717562,0
+            -97.4246946,18.4714996,0
+            -97.4241798,18.4711406,0
+            -97.4238686,18.4709218,0
+            -97.4225114,18.4698889,0
+            -97.4205588,18.468449,0
+            -97.4201296,18.4681793,0
+            -97.4193786,18.4678333,0
+            -97.4172919,18.4670854,0
+            -97.4148832,18.4662,0
+            -97.4109404,18.4647753,0
+            -97.4088697,18.4640172,0
+            -97.4073033,18.4634982,0
+            -97.4064454,18.4633989,0
+            -97.4048464,18.4633048,0
+            -97.4010806,18.4632132,0
+            -97.3972879,18.4630351,0
+            -97.3942034,18.4628977,0
+            -97.3920094,18.4628621,0
+            -97.38856,18.4627603,0
+            -97.3849558,18.4626636,0
+            -97.3850946,18.4604604,0
+            -97.3852138,18.458128,0
+            -97.3853099,18.4573389,0
+            -97.3872099,18.4573851,0
+            -97.3871492,18.4590204,0
+            -97.387117,18.4602314,0
+            -97.3870902,18.4607555,0
+            -97.3888014,18.460837,0
+            -97.3914555,18.4608926,0
+            -97.3914085,18.4621599,0
+            -97.3914009,18.4641812,0
+            -97.3913943,18.4649301,0
+            -97.3959898,18.4650246,0
+            -97.4005549,18.4651671,0
+            -97.4041107,18.4652809,0
+            -97.4041872,18.4634879,0
+            -97.4061285,18.4636101,0
+            -97.4067002,18.4636063,0
+            -97.4072228,18.4636762,0
+            -97.4085425,18.464124,0
+            -97.4109994,18.4650602,0
+            -97.411906,18.4653503,0
+            -97.414497,18.4663018,0
+            -97.4161653,18.4669022,0
+            -97.4191158,18.467991,0
+            -97.4198668,18.4682658,0
+            -97.4204944,18.4686423,0
+            -97.4226724,18.4702451,0
+            -97.423992,18.4712423,0
+            -97.4266689,18.4732165,0
+            -97.4272593,18.4736706,0
+            -97.4275061,18.4738894,0
+            -97.4276965,18.4741616,0
+            -97.4277931,18.4743931,0
+            -97.427951,18.4745089,0
+            -97.4281111,18.4745514,0
+            -97.4282353,18.4745699,0
+            -97.4285656,18.4743905,0
+            -97.4288683,18.4743053,0
+            -97.4293135,18.4742341,0
+            -97.4298392,18.4742697,0
+            -97.4304243,18.4744007,0
+            -97.4302308,18.4753026,0
+            -97.4298982,18.4768035,0
+            -97.4297373,18.4774548,0
+            -97.4297051,18.4776684,0
+            -97.4296998,18.47776,0
+            -97.4294852,18.4784774,0
+            -97.4311321,18.4787013,0
+            -97.4311964,18.4786046,0
+            -97.4330525,18.4796832,0
+            -97.4334441,18.4799224,0
+            -97.433707,18.4800546,0
+            -97.4344526,18.4804973,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      

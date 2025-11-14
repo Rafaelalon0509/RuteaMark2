@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Ruta 2 - Tehuacán</name>
+    <description><![CDATA[📍  RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos en TELEGRAM y COMPARTE con todos tus contactos: https://t.me/rutastehuacan<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+    <Style id="icon-1899-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-E65100-7200-normal">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>7.2</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-E65100-7200-highlight">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>10.8</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-E65100-7200">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-E65100-7200-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-E65100-7200-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>R2</name>
+      <Placemark>
+        <name>Recorrido de la Ruta 2</name>
+        <description><![CDATA[📍 RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos y COMPARTE con todos tus contactos: http://www.rutastehuacan.th1.mx<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+        <styleUrl>#line-E65100-7200</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -97.3849598,18.4771246,0
+            -97.3866388,18.4770991,0
+            -97.3866281,18.4776537,0
+            -97.385464,18.4778216,0
+            -97.385566,18.4786051,0
+            -97.3854533,18.4871423,0
+            -97.3846808,18.4866335,0
+            -97.3846594,18.4770228,0
+            -97.3893801,18.4736749,0
+            -97.3896215,18.454426,0
+            -97.3945084,18.4545176,0
+            -97.3946533,18.4501261,0
+            -97.3962626,18.4468083,0
+            -97.3986927,18.4414548,0
+            -97.3998085,18.4389917,0
+            -97.4014285,18.4400553,0
+            -97.4021366,18.4408034,0
+            -97.4017343,18.4407474,0
+            -97.401568,18.4423555,0
+            -97.4016485,18.443185,0
+            -97.4006829,18.4431036,0
+            -97.4007473,18.4440247,0
+            -97.4017075,18.4441112,0
+            -97.4020884,18.4492305,0
+            -97.4015519,18.4500345,0
+            -97.3968017,18.4497943,0
+            -97.3962841,18.475415,0
+            -97.3962251,18.475415,0
+            -97.395576,18.4742753,0
+            -97.3938325,18.4743465,0
+            -97.3937313,18.4761731,0
+            -97.3866227,18.4760968,0
+            -97.3858771,18.4760968,0
+            -97.3848793,18.4767888,0
+            -97.3849598,18.4770482,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      

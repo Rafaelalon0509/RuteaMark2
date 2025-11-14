@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Ruta 32 - San Francisco  - Tehuacán</name>
+    <description><![CDATA[📍  RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos en TELEGRAM y COMPARTE con todos tus contactos: https://t.me/rutastehuacan<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+    <Style id="icon-1899-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-E65100-7200-normal">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>7.2</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-E65100-7200-highlight">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>10.8</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-E65100-7200">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-E65100-7200-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-E65100-7200-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Ruta</name>
+      <Placemark>
+        <name>Recorrido de la Ruta 32 - San Francisco / Paraíso / Colosio</name>
+        <description><![CDATA[📍 RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos y COMPARTE con todos tus contactos: http://www.rutastehuacan.th1.mx<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+        <styleUrl>#line-E65100-7200</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -97.39154,18.486555,0
+            -97.391293,18.488082,0
+            -97.390942,18.489698,0
+            -97.390763,18.490295,0
+            -97.390758,18.49056,0
+            -97.391442,18.49102,0
+            -97.392355,18.491653,0
+            -97.393596,18.49238,0
+            -97.397366,18.494695,0
+            -97.399479,18.495987,0
+            -97.399586,18.49612,0
+            -97.400273,18.497626,0
+            -97.40406,18.495499,0
+            -97.403374,18.494899,0
+            -97.402794,18.494594,0
+            -97.402505,18.49436,0
+            -97.402301,18.493993,0
+            -97.402086,18.493342,0
+            -97.40259,18.493393,0
+            -97.402719,18.492558,0
+            -97.404053,18.49269,0
+            -97.404532,18.491867,0
+            -97.405198,18.49092,0
+            -97.405552,18.490381,0
+            -97.405607,18.489842,0
+            -97.405584,18.488906,0
+            -97.405536,18.488197,0
+            -97.40538,18.488275,0
+            -97.405015,18.48802,0
+            -97.404366,18.488012,0
+            -97.403851,18.487732,0
+            -97.403288,18.486932,0
+            -97.402618,18.485657,0
+            -97.40244,18.485365,0
+            -97.40015,18.481487,0
+            -97.397151,18.476746,0
+            -97.396016,18.475,0
+            -97.394608,18.471689,0
+            -97.394007,18.470371,0
+            -97.394029,18.468493,0
+            -97.394103,18.464971,0
+            -97.394233,18.459558,0
+            -97.394266,18.458773,0
+            -97.385213,18.458433,0
+            -97.38531,18.457339,0
+            -97.389537,18.457456,0
+            -97.39152,18.457508,0
+            -97.391465,18.460711,0
+            -97.391389,18.463718,0
+            -97.391357,18.466466,0
+            -97.39132,18.469615,0
+            -97.391294,18.472131,0
+            -97.391216,18.472156,0
+            -97.391136,18.4723,0
+            -97.391173,18.472395,0
+            -97.39125,18.4725,0
+            -97.391326,18.47251,0
+            -97.391318,18.473924,0
+            -97.391276,18.474372,0
+            -97.391241,18.475272,0
+            -97.39383,18.475291,0
+            -97.39463,18.475217,0
+            -97.395884,18.475011,0
+            -97.396194,18.475587,0
+            -97.397182,18.477052,0
+            -97.398728,18.479435,0
+            -97.399946,18.481343,0
+            -97.400194,18.481804,0
+            -97.399431,18.482274,0
+            -97.397194,18.483398,0
+            -97.395019,18.484536,0
+            -97.391584,18.486342,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+     

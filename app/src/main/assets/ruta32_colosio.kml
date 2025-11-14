@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Ruta 32 - Colosio - Tehuacán</name>
+    <description><![CDATA[📍 RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos y COMPARTE con todos tus contactos: http://www.rutastehuacan.th1.mx<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+    <Style id="icon-1899-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-E65100-6813-normal">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>6.813</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-E65100-6813-highlight">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>10.2195</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-E65100-6813">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-E65100-6813-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-E65100-6813-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Recorrido Ruta 32 Colosio</name>
+      <Placemark>
+        <name>Recorrido de la Ruta 32 - Colosio / Francisco / Paraíso </name>
+        <description><![CDATA[📍 RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos y COMPARTE con todos tus contactos: http://www.rutastehuacan.th1.mx<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+        <styleUrl>#line-E65100-6813</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -97.39154,18.486555,0
+            -97.391312,18.487999,0
+            -97.39083,18.490146,0
+            -97.390763,18.490295,0
+            -97.390733,18.490652,0
+            -97.390851,18.493064,0
+            -97.390893,18.493847,0
+            -97.387122,18.49373,0
+            -97.387036,18.49376,0
+            -97.387026,18.493827,0
+            -97.387091,18.493862,0
+            -97.388979,18.493939,0
+            -97.388856,18.49605,0
+            -97.388682,18.498797,0
+            -97.391012,18.498632,0
+            -97.393748,18.497614,0
+            -97.394776,18.49719,0
+            -97.395068,18.497187,0
+            -97.395325,18.497472,0
+            -97.39511,18.49797,0
+            -97.395121,18.498367,0
+            -97.396452,18.497624,0
+            -97.396209,18.497128,0
+            -97.398404,18.495844,0
+            -97.400507,18.494511,0
+            -97.402106,18.493605,0
+            -97.402052,18.493168,0
+            -97.401591,18.492354,0
+            -97.404053,18.49269,0
+            -97.404424,18.491921,0
+            -97.40545,18.490435,0
+            -97.405625,18.490044,0
+            -97.405611,18.489476,0
+            -97.405536,18.488197,0
+            -97.40538,18.488275,0
+            -97.404917,18.48806,0
+            -97.404366,18.488012,0
+            -97.403851,18.487732,0
+            -97.403517,18.487365,0
+            -97.4031,18.486612,0
+            -97.40158,18.483919,0
+            -97.39834,18.478617,0
+            -97.39617,18.475331,0
+            -97.394166,18.470711,0
+            -97.394007,18.470371,0
+            -97.39407,18.467118,0
+            -97.394134,18.464147,0
+            -97.394266,18.458773,0
+            -97.391056,18.458641,0
+            -97.385213,18.458433,0
+            -97.38531,18.457339,0
+            -97.38877,18.45743,0
+            -97.39152,18.457508,0
+            -97.391458,18.459627,0
+            -97.391393,18.463263,0
+            -97.391347,18.468282,0
+            -97.391294,18.472131,0
+            -97.391226,18.472212,0
+            -97.391205,18.472329,0
+            -97.3912,18.472448,0
+            -97.391303,18.472472,0
+            -97.391323,18.473306,0
+            -97.391241,18.475272,0
+            -97.393051,18.47529,0
+            -97.394024,18.475271,0
+            -97.395884,18.475011,0
+            -97.396194,18.475587,0
+            -97.397862,18.478085,0
+            -97.398962,18.479879,0
+            -97.400194,18.481804,0
+            -97.394628,18.484743,0
+            -97.391584,18.486342,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      

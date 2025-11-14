@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Ruta 29 - San Lorenzo  - Tehuacán</name>
+    <description><![CDATA[📍  RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos en TELEGRAM y COMPARTE con todos tus contactos: https://t.me/rutastehuacan<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+    <Style id="icon-1899-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-E65100-6813-normal">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>6.813</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-E65100-6813-highlight">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>10.2195</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-E65100-6813">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-E65100-6813-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-E65100-6813-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Recorrido Ruta 29 Sn Lorenzo</name>
+      <Placemark>
+        <name>Recorrido de la Ruta 29 - San Lorenzo</name>
+        <description><![CDATA[📍 RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos y COMPARTE con todos tus contactos: http://www.rutastehuacan.th1.mx<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+        <styleUrl>#line-E65100-6813</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -97.4359706,18.4729191,0
+            -97.4363461,18.4731481,0
+            -97.4364695,18.4735297,0
+            -97.4368772,18.4732244,0
+            -97.4364587,18.4730921,0
+            -97.4362924,18.4730209,0
+            -97.4359116,18.4727817,0
+            -97.4355843,18.4738655,0
+            -97.4351766,18.4753563,0
+            -97.4346563,18.4752138,0
+            -97.4329128,18.4747966,0
+            -97.4305203,18.4742216,0
+            -97.4279347,18.4735653,0
+            -97.4271836,18.47326,0
+            -97.4266258,18.4729191,0
+            -97.4252095,18.471871,0
+            -97.4246946,18.4714996,0
+            -97.4242225,18.4711994,0
+            -97.4237397,18.4708228,0
+            -97.4221894,18.4696526,0
+            -97.4205925,18.4684719,0
+            -97.419888,18.4680346,0
+            -97.4189815,18.4676936,0
+            -97.4171844,18.4670475,0
+            -97.414985,18.4662435,0
+            -97.4115249,18.4649816,0
+            -97.409465,18.4642438,0
+            -97.4081722,18.4637808,0
+            -97.4071636,18.4634704,0
+            -97.4062295,18.4633805,0
+            -97.4031725,18.4632669,0
+            -97.3997447,18.4631855,0
+            -97.3956691,18.4629645,0
+            -97.3920789,18.4628395,0
+            -97.3879376,18.4627733,0
+            -97.3849558,18.4626636,0
+            -97.3850523,18.4613254,0
+            -97.3851856,18.4592166,0
+            -97.3853099,18.4573389,0
+            -97.3877391,18.4574,0
+            -97.3915199,18.4575077,0
+            -97.3914942,18.4590232,0
+            -97.3914352,18.4617658,0
+            -97.3913923,18.4647069,0
+            -97.3913943,18.4649301,0
+            -97.3921647,18.4649409,0
+            -97.394981,18.4650071,0
+            -97.3982909,18.4651088,0
+            -97.4011287,18.4651903,0
+            -97.4023687,18.4652536,0
+            -97.4053397,18.4652869,0
+            -97.4069061,18.465984,0
+            -97.4094328,18.4670627,0
+            -97.4113854,18.4678768,0
+            -97.411423,18.4669864,0
+            -97.4114713,18.4662283,0
+            -97.4124691,18.4662842,0
+            -97.412512,18.4655668,0
+            -97.4138584,18.4660756,0
+            -97.4162671,18.4669508,0
+            -97.41793,18.467541,0
+            -97.4192819,18.46806,0
+            -97.4201348,18.4684009,0
+            -97.4209931,18.4690166,0
+            -97.423053,18.4705583,0
+            -97.4234661,18.4708534,0
+            -97.4238148,18.4705633,0
+            -97.4241045,18.4705277,0
+            -97.4254241,18.4707516,0
+            -97.4285194,18.4712808,0
+            -97.4291631,18.4714283,0
+            -97.4323174,18.471932,0
+            -97.4332991,18.4721406,0
+            -97.4342164,18.4723798,0
+            -97.4357345,18.4728123,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+      

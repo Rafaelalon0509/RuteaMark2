@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Ruta 15 Frailes  - Tehuacán</name>
+    <description><![CDATA[📍 RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos y COMPARTE con todos tus contactos: http://www.rutastehuacan.th1.mx<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+    <Style id="icon-1899-DB4436-normal">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-DB4436-highlight">
+      <IconStyle>
+        <color>ff3644db</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-DB4436">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-DB4436-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-DB4436-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="line-E65100-7006-normal">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>7.006</width>
+      </LineStyle>
+    </Style>
+    <Style id="line-E65100-7006-highlight">
+      <LineStyle>
+        <color>ff0051e6</color>
+        <width>10.509</width>
+      </LineStyle>
+    </Style>
+    <StyleMap id="line-E65100-7006">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#line-E65100-7006-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#line-E65100-7006-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>Recorrido Ruta 15 Frailes</name>
+      <Placemark>
+        <name>Recorrido de la Ruta 15 - Los Frailes</name>
+        <description><![CDATA[📍 RUTAS de TEHUACÁN 🚐<br>Mas Rutas en:: https://t.me/rutastehuacan<br><br>❤️ Agradecemos el APOYO en la edición y corrección de éste mapa, al usuario de Telegram: @NaNBVCK<br><br>¡Organiza tus viajes más fácilmente!.<br><br>Mapas GRATUITOS del recorrido de las RUTAS de transporte en la ciudad., Visítanos y COMPARTE con todos tus contactos: http://www.rutastehuacan.th1.mx<br><br>.🚐⬅️🚐⬅️🚐⬅️🚐<br><br>📍 Kevin Williams - Guía Local: https://maps.app.goo.gl/Fy7sEGaeuPvP19j36<br><br>🤳🏻 IG:<br>https://instagram.com/kevinwilliams.fx<br><br>.]]></description>
+        <styleUrl>#line-E65100-7006</styleUrl>
+        <LineString>
+          <tessellate>1</tessellate>
+          <coordinates>
+            -97.4059341,18.4810464,0
+            -97.4022863,18.4802731,0
+            -97.4007467,18.4799831,0
+            -97.3999098,18.4798152,0
+            -97.3996684,18.4808277,0
+            -97.3980417,18.4783728,0
+            -97.3983488,18.4771797,0
+            -97.3986331,18.4757957,0
+            -97.4084715,18.4770372,0
+            -97.4085037,18.4759586,0
+            -97.404475,18.4750834,0
+            -97.4046896,18.4732721,0
+            -97.4036918,18.473089,0
+            -97.4036059,18.4749461,0
+            -97.4015567,18.4746815,0
+            -97.4011866,18.4744017,0
+            -97.4014039,18.4727506,0
+            -97.4015192,18.4718895,0
+            -97.4010082,18.4718016,0
+            -97.4012053,18.4703268,0
+            -97.3998582,18.4701727,0
+            -97.3993586,18.4723083,0
+            -97.3977158,18.4722901,0
+            -97.3977963,18.4702905,0
+            -97.397955,18.4671613,0
+            -97.3961011,18.4670952,0
+            -97.3940519,18.4669923,0
+            -97.3941595,18.4629073,0
+            -97.389412,18.4628052,0
+            -97.3894761,18.4619357,0
+            -97.3894546,18.4614879,0
+            -97.3894653,18.4607705,0
+            -97.3895514,18.4586022,0
+            -97.3852134,18.4584329,0
+            -97.3853562,18.4562265,0
+            -97.3872528,18.4562946,0
+            -97.3871318,18.4589234,0
+            -97.3870943,18.4607908,0
+            -97.3914555,18.4608926,0
+            -97.3914287,18.4630297,0
+            -97.3913943,18.4649301,0
+            -97.3964448,18.4650469,0
+            -97.3963854,18.4692108,0
+            -97.399875,18.4692411,0
+            -97.400103,18.4692564,0
+            -97.3999179,18.4701824,0
+            -97.4001137,18.4702155,0
+            -97.4011872,18.4703421,0
+            -97.4009908,18.4718189,0
+            -97.4014937,18.4719086,0
+            -97.4013757,18.472771,0
+            -97.401192,18.4737975,0
+            -97.4010981,18.4744233,0
+            -97.4015085,18.4747413,0
+            -97.4027771,18.4748965,0
+            -97.403681,18.4750262,0
+            -97.4037588,18.4734896,0
+            -97.4037669,18.4731793,0
+            -97.4046091,18.4733268,0
+            -97.4044991,18.4741765,0
+            -97.4043838,18.4751509,0
+            -97.4085037,18.4759586,0
+            -97.4084715,18.4770372,0
+            -97.4035335,18.4765119,0
+            -97.3987941,18.4758199,0
+            -97.3984802,18.4772038,0
+            -97.4020395,18.4777864,0
+            -97.4033887,18.478009,0
+            -97.404365,18.478009,0
+            -97.4046171,18.478009,0
+            -97.4051429,18.4782176,0
+            -97.4058617,18.4784109,0
+            -97.4062747,18.4785127,0
+            -97.4074227,18.4786908,0
+            -97.4078787,18.4787416,0
+            -97.4077285,18.4807259,0
+            -97.4076588,18.4814331,0
+            -97.4060494,18.4810719,0
+          </coordinates>
+        </LineString>
+      </Placemark>
+    </Folder>
+    <Folder>
+     
