@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -13,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -32,8 +34,16 @@ import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserFactory
 import java.io.InputStream
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.setValue
 
-// ----------------- DATA CLASS PARADAS -----------------
+
+
+// ----------------- PARADAS FIJAS -----------------
 val paradasFijas = listOf(
     "Plaza Cristal" to GeoPoint(18.462823164660726, -97.39048813866889),
     "Cuidado con el Perro" to GeoPoint(18.462942592352054, -97.394323066223),
@@ -49,17 +59,19 @@ val paradasFijas = listOf(
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // osmdroid config
         Configuration.getInstance().load(this, getSharedPreferences("osmdroid", MODE_PRIVATE))
 
         setContent {
             RuteaMark1Theme {
                 val navController = rememberNavController()
                 NavHost(navController = navController, startDestination = "login") {
+                    // pantallas principales
                     composable("login") { LoginScreen(navController) }
                     composable("menu") { MenuScreen(navController) }
                     composable("rutas") { RutasScreen(navController) }
 
-                    // ----------------- COMPOSABLES DE MAPAS -----------------
+                    // composables de mapas (cada uno apunta a un archivo KML)
                     composable("mapa/ruta1.kml") { MapaRutaScreen("ruta1.kml") }
                     composable("mapa/ruta2.kml") { MapaRutaScreen("ruta2.kml") }
                     composable("mapa/ruta3.kml") { MapaRutaScreen("ruta3.kml") }
@@ -113,8 +125,7 @@ class MainActivity : ComponentActivity() {
                     composable("mapa/ruta_rc.kml") { MapaRutaScreen("ruta_rc.kml") }
                     composable("mapa/ruta_rc_va.kml") { MapaRutaScreen("ruta_rc_va.kml") }
 
-                    // Pantallas secundarias
-                    composable("taxis") { TaxisScreen(navController) }
+                    // pantallas secundarias
                     composable("anuncios") { AnunciosScreen(navController) }
                     composable("quejas") { QuejasScreen(navController) }
                 }
@@ -135,7 +146,7 @@ fun RutasScreen(navController: NavHostController) {
             Spacer(modifier = Modifier.height(20.dp))
         }
 
-        // Ejemplo: botones independientes (todas tus rutas)
+        // botones independientes en posición fija
         item { RutaButtonGeneral("Ruta 1", "ruta1.kml", navController) }
         item { RutaButtonGeneral("Ruta 2", "ruta2.kml", navController) }
         item { RutaButtonGeneral("Ruta 3", "ruta3.kml", navController) }
@@ -189,8 +200,7 @@ fun RutasScreen(navController: NavHostController) {
         item { RutaButtonGeneral("Ruta RC", "ruta_rc.kml", navController) }
         item { RutaButtonGeneral("Ruta RC Del Valle", "ruta_rc_va.kml", navController) }
 
-
-        // Botón volver al menú
+        // botón volver al menú
         item {
             Spacer(modifier = Modifier.height(30.dp))
             Button(
@@ -218,7 +228,7 @@ fun RutaButtonGeneral(nombre: String, archivoKml: String, navController: NavHost
 // ----------------- MAPA RUTA SCREEN -----------------
 @Composable
 fun MapaRutaScreen(archivoKml: String) {
-    val context = androidx.compose.ui.platform.LocalContext.current
+    val context = LocalContext.current
     Column(modifier = Modifier.fillMaxSize()) {
         Text(text = archivoKml, fontSize = 24.sp, fontWeight = FontWeight.Bold, modifier = Modifier.padding(16.dp), color = Color.Black)
         AndroidView(
@@ -228,7 +238,10 @@ fun MapaRutaScreen(archivoKml: String) {
                     tileProvider.tileSource = TileSourceFactory.MAPNIK
                     overlays.clear()
 
-                    val puntos = try { parseKml(ctx, archivoKml) } catch (e: Exception) { Log.e("KML", "Error leyendo $archivoKml: ${e.message}"); emptyList<GeoPoint>() }
+                    val puntos = try { parseKml(ctx, archivoKml) } catch (e: Exception) {
+                        Log.e("KML", "Error leyendo $archivoKml: ${e.message}")
+                        emptyList<GeoPoint>()
+                    }
 
                     if (puntos.isNotEmpty()) {
                         val latitudes = puntos.map { it.latitude }
@@ -293,10 +306,32 @@ fun parseKml(context: android.content.Context, fileName: String): List<GeoPoint>
 @Composable
 fun LoginScreen(navController: NavHostController) {
     Surface(modifier = Modifier.fillMaxSize(), color = Color.White) {
-        Column(modifier = Modifier.fillMaxSize(), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
+        Column(
+            modifier = Modifier.fillMaxSize(),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            // TEXTO ARRIBA
             Text("Rutea", fontSize = 40.sp, fontWeight = FontWeight.Bold, color = Color.Black)
+
+            Spacer(modifier = Modifier.height(20.dp))
+
+            // IMAGEN
+            Image(
+                painter = painterResource(id = R.drawable.logo_rutea),
+                contentDescription = "Logo Rutea",
+                modifier = Modifier.size(200.dp)
+            )
+
             Spacer(modifier = Modifier.height(30.dp))
-            Button(onClick = { navController.navigate("menu") }, colors = ButtonDefaults.buttonColors(containerColor = Color.Black), shape = RoundedCornerShape(12.dp), modifier = Modifier.width(200.dp).height(50.dp)) {
+
+            // BOTON ENTRAR
+            Button(
+                onClick = { navController.navigate("menu") },
+                colors = ButtonDefaults.buttonColors(containerColor = Color.Black),
+                shape = RoundedCornerShape(12.dp),
+                modifier = Modifier.width(200.dp).height(50.dp)
+            ) {
                 Text("Entrar", fontSize = 18.sp, color = Color.White)
             }
         }
@@ -304,30 +339,137 @@ fun LoginScreen(navController: NavHostController) {
 }
 
 @Composable
-fun MenuScreen(navController: NavHostController) {
-    Surface(modifier = Modifier.fillMaxSize(), color = Color.White) {
-        Column(modifier = Modifier.fillMaxSize().padding(20.dp), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
-            Text("Menú Principal", fontSize = 28.sp, fontWeight = FontWeight.Bold, color = Color.Black)
-            Spacer(modifier = Modifier.height(25.dp))
-            MenuButton("Rutas", Icons.Filled.DirectionsBus) { navController.navigate("rutas") }
-            MenuButton("Taxis", Icons.Filled.LocalTaxi) { navController.navigate("taxis") }
-            MenuButton("Anuncios", Icons.Filled.Announcement) { navController.navigate("anuncios") }
-            MenuButton("Quejas", Icons.Filled.Report) { navController.navigate("quejas") }
-        }
-    }
-}
-
-@Composable
-fun MenuButton(text: String, icon: androidx.compose.ui.graphics.vector.ImageVector, onClick: () -> Unit) {
-    Button(onClick = onClick, colors = ButtonDefaults.buttonColors(containerColor = Color.Black), shape = RoundedCornerShape(12.dp), modifier = Modifier.padding(vertical = 8.dp).fillMaxWidth().height(55.dp)) {
+fun MenuButton(text: String, icon: ImageVector, onClick: () -> Unit) {
+    Button(
+        onClick = onClick,
+        colors = ButtonDefaults.buttonColors(containerColor = Color.Black),
+        shape = RoundedCornerShape(12.dp),
+        modifier = Modifier
+            .padding(vertical = 8.dp)
+            .fillMaxWidth()
+            .height(55.dp)
+    ) {
         Icon(icon, contentDescription = text, tint = Color.White)
         Spacer(modifier = Modifier.width(8.dp))
         Text(text, fontSize = 18.sp, color = Color.White)
     }
 }
 
-@Composable fun TaxisScreen(navController: NavHostController) { ScreenTemplate("Taxis", navController) }
-@Composable fun AnunciosScreen(navController: NavHostController) { ScreenTemplate("Anuncios", navController) }
+@Composable
+fun MenuScreen(navController: NavHostController) {
+    Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = Color.White
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = 20.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+
+            Spacer(modifier = Modifier.height(40.dp)) // Margen superior pequeño
+
+            // ---- CONTENIDO CENTRADO ----
+            Column(
+                modifier = Modifier.weight(1f), // Esto centra verticalmente
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.Center
+            ) {
+                Text(
+                    "Menú Principal",
+                    fontSize = 28.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Black
+                )
+
+                Spacer(modifier = Modifier.height(25.dp))
+
+                MenuButton("Rutas", Icons.Filled.DirectionsBus) { navController.navigate("rutas") }
+                MenuButton("Anuncios", Icons.Filled.Announcement) { navController.navigate("anuncios") }
+                MenuButton("Quejas", Icons.Filled.Report) { navController.navigate("quejas") }
+            }
+
+            // ---- IMAGEN ABAJO ----
+            Image(
+                painter = painterResource(id = R.drawable.ubicacion),
+                contentDescription = null,
+                modifier = Modifier
+                    .size(200.dp)
+                    .padding(bottom =40.dp)
+            )
+        }
+    }
+}
+
+
+@Composable
+fun AnunciosScreen(navController: NavHostController) {
+
+    // Estados de texto
+    var texto1 by remember { mutableStateOf("Anuncio importante #1") }
+    var texto2 by remember { mutableStateOf("Información sobre rutas actualizada") }
+    var texto3 by remember { mutableStateOf("Promociones y avisos generales") }
+    var texto4 by remember { mutableStateOf("Más información relevante") }
+    var texto5 by remember { mutableStateOf("Aviso temporal de servicio") }
+    var texto6 by remember { mutableStateOf("Recordatorio de seguridad") }
+    var texto7 by remember { mutableStateOf("Próximos cambios en rutas") }
+    var texto8 by remember { mutableStateOf("Eventos especiales") }
+    var texto9 by remember { mutableStateOf("Horario extendido") }
+    var texto10 by remember { mutableStateOf("Otros anuncios importantes") }
+
+    Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = Color.White
+    ) {
+        LazyColumn(   // 👉 AGREGO SCROLL
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(20.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.spacedBy(16.dp)
+        ) {
+
+            item {
+                Text(
+                    "Anuncios",
+                    fontSize = 32.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = Color.Black
+                )
+                Spacer(modifier = Modifier.height(10.dp))
+            }
+
+            item { EditableCapsule(texto = texto1, onChange = { texto1 = it }) }
+            item { EditableCapsule(texto = texto2, onChange = { texto2 = it }) }
+            item { EditableCapsule(texto = texto3, onChange = { texto3 = it }) }
+            item { EditableCapsule(texto = texto4, onChange = { texto4 = it }) }
+            item { EditableCapsule(texto = texto5, onChange = { texto5 = it }) }
+            item { EditableCapsule(texto = texto6, onChange = { texto6 = it }) }
+            item { EditableCapsule(texto = texto7, onChange = { texto7 = it }) }   // ✔ corregido
+            item { EditableCapsule(texto = texto8, onChange = { texto8 = it }) }
+            item { EditableCapsule(texto = texto9, onChange = { texto9 = it }) }
+            item { EditableCapsule(texto = texto10, onChange = { texto10 = it }) }
+
+            item {
+                Spacer(modifier = Modifier.height(20.dp))
+                Button(
+                    onClick = { navController.popBackStack() },
+                    colors = ButtonDefaults.buttonColors(containerColor = Color.Black),
+                    shape = RoundedCornerShape(12.dp),
+                    modifier = Modifier.fillMaxWidth().height(50.dp)
+                ) {
+                    Text("Volver", color = Color.White, fontSize = 18.sp)
+                }
+                Spacer(modifier = Modifier.height(40.dp))
+            }
+        }
+    }
+}
+
+
+
+
 @Composable fun QuejasScreen(navController: NavHostController) { ScreenTemplate("Quejas", navController) }
 
 @Composable
@@ -339,6 +481,40 @@ fun ScreenTemplate(title: String, navController: NavHostController) {
             Button(onClick = { navController.popBackStack() }, colors = ButtonDefaults.buttonColors(containerColor = Color.Black), shape = RoundedCornerShape(12.dp)) {
                 Text("Volver", color = Color.White, fontSize = 16.sp)
             }
+        }
+    }
+}
+
+
+
+@Composable
+fun EditableCapsule(texto: String, onChange: (String) -> Unit) {
+    Card(
+        shape = RoundedCornerShape(25.dp),
+        colors = CardDefaults.cardColors(containerColor = Color(0xFFEFEFEF)),
+        modifier = Modifier
+            .fillMaxWidth()
+            .heightIn(min = 60.dp)
+    ) {
+        Box(
+            modifier = Modifier
+                .padding(16.dp)
+                .fillMaxWidth(),
+            contentAlignment = Alignment.CenterStart
+        ) {
+            TextField(
+                value = texto,
+                onValueChange = onChange,
+                colors = TextFieldDefaults.colors(
+                    focusedContainerColor = Color.Transparent,
+                    unfocusedContainerColor = Color.Transparent,
+                    focusedIndicatorColor = Color.Transparent,
+                    unfocusedIndicatorColor = Color.Transparent,
+                ),
+                maxLines = 3,
+                textStyle = LocalTextStyle.current.copy(fontSize = 16.sp),
+                modifier = Modifier.fillMaxWidth()
+            )
         }
     }
 }
