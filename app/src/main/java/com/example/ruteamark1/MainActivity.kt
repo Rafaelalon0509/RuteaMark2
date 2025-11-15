@@ -40,7 +40,13 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.setValue
-
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.unit.dp
+import android.content.Context
 
 
 // ----------------- PARADAS FIJAS -----------------
@@ -470,7 +476,141 @@ fun AnunciosScreen(navController: NavHostController) {
 
 
 
-@Composable fun QuejasScreen(navController: NavHostController) { ScreenTemplate("Quejas", navController) }
+@Composable
+fun QuejasScreen(navController: NavHostController) {
+    val context = LocalContext.current
+    val sharedPreferences = remember {
+        context.getSharedPreferences("quejas_app", Context.MODE_PRIVATE)
+    }
+
+    // Cargar publicaciones guardadas al iniciar
+    var publicaciones by remember {
+        mutableStateOf(
+            sharedPreferences.getStringSet("publicaciones", setOf())?.toList() ?: emptyList()
+        )
+    }
+
+    var nuevaPublicacion by remember { mutableStateOf("") }
+
+    Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = Color.White
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp)
+        ) {
+            Text(
+                text = "Publicaciones de Quejas",
+                fontSize = 26.sp,
+                fontWeight = FontWeight.Bold,
+                color = Color.Black
+            )
+
+            Spacer(modifier = Modifier.height(20.dp))
+
+            // LISTA SCROLLABLE
+            LazyColumn(
+                modifier = Modifier.weight(1f)
+            ) {
+                itemsIndexed(publicaciones) { index, publicacion ->
+                    Card(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(bottom = 12.dp),
+                        elevation = CardDefaults.cardElevation(6.dp),
+                        colors = CardDefaults.cardColors(containerColor = Color(0xFFF5F5F5))
+                    ) {
+                        Column(
+                            modifier = Modifier.padding(16.dp)
+                        ) {
+                            Text(
+                                text = publicacion,
+                                fontSize = 16.sp,
+                                color = Color.Black
+                            )
+
+                            // Botón para eliminar
+                            Spacer(modifier = Modifier.height(8.dp))
+                            Button(
+                                onClick = {
+                                    // Eliminar la publicación de la lista
+                                    val updatedList = publicaciones.toMutableList().apply {
+                                        removeAt(index)
+                                    }
+                                    publicaciones = updatedList
+
+                                    // Guardar cambios en SharedPreferences
+                                    sharedPreferences.edit()
+                                        .putStringSet("publicaciones", updatedList.toSet())
+                                        .apply()
+                                },
+                                colors = ButtonDefaults.buttonColors(containerColor = Color.Red),
+                                modifier = Modifier.align(Alignment.End)
+                            ) {
+                                Text("Eliminar", color = Color.White)
+                            }
+                        }
+                    }
+                }
+            }
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            // TEXTFIELD PARA NUEVA PUBLICACIÓN
+            OutlinedTextField(
+                value = nuevaPublicacion,
+                onValueChange = { nuevaPublicacion = it },
+                label = { Text("Escribe una nueva queja") },
+                modifier = Modifier.fillMaxWidth(),
+                colors = TextFieldDefaults.colors(
+                    focusedContainerColor = Color.White,
+                    unfocusedContainerColor = Color.White,
+                    focusedLabelColor = Color.Black,
+                    unfocusedLabelColor = Color.Gray,
+                )
+            )
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+            // BOTÓN AGREGAR
+            Button(
+                onClick = {
+                    if (nuevaPublicacion.isNotBlank()) {
+                        // Agregar a la lista
+                        val updatedList = publicaciones + nuevaPublicacion
+                        publicaciones = updatedList
+
+                        // Guardar en SharedPreferences
+                        sharedPreferences.edit()
+                            .putStringSet("publicaciones", updatedList.toSet())
+                            .apply()
+
+                        // Limpiar el campo de texto
+                        nuevaPublicacion = ""
+                    }
+                },
+                modifier = Modifier.fillMaxWidth(),
+                colors = ButtonDefaults.buttonColors(containerColor = Color.Black)
+            ) {
+                Text("Agregar publicación", color = Color.White)
+            }
+
+            Spacer(modifier = Modifier.height(20.dp))
+
+            // BOTÓN VOLVER
+            Button(
+                onClick = { navController.popBackStack() },
+                modifier = Modifier.fillMaxWidth(),
+                colors = ButtonDefaults.buttonColors(containerColor = Color.Gray)
+            ) {
+                Text("Volver al menú", color = Color.White)
+            }
+        }
+    }
+}
+
 
 @Composable
 fun ScreenTemplate(title: String, navController: NavHostController) {
