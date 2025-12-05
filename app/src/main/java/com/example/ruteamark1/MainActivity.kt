@@ -67,9 +67,32 @@ import org.xmlpull.v1.XmlPullParser
 import org.xmlpull.v1.XmlPullParserFactory
 import java.io.InputStream
 
+
+
+
+
+// @autor : Antony Strange
+// @Description: en este proyecto esta la app de rastreo de rutas en la ciudad de tehuacan
+//y asi facilitar la ubicacion de nuevas rutas o a los que son nuevos en la ciudad
+//
+//
+//
+//  IN MY RESTLESS DREAMS...
+
+
+
+
+
+
+
+
+
+
+
 // =====================================================================
 // PALETA DE COLORES MODERNA
 // =====================================================================
+
 
 object AppColors {
     // Azul principal (inspirado en transporte/ubicación)
