@@ -76,5 +76,14 @@ dependencies {
 
     // 🔹 Solo una versión de osmdroid base
     implementation("org.osmdroid:osmdroid-android:6.1.18")
+    // Servicios de ubicación de Google Play
+    implementation("com.google.android.gms:play-services-location:21.0.1")
+// Osmdroid para mapas (si no lo tienes ya)
+    implementation("org.osmdroid:osmdroid-android:6.1.18")
+// Para permisos más fáciles (opcional pero recomendado)
+    implementation("com.google.accompanist:accompanist-permissions:0.32.0")
+// Para corrutinas (si no las tienes)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+
 }
 
